@@ -1,5 +1,5 @@
 {
-    "name": "binn/yii2-auth",
+    "name": "developen/yii2-auth",
     "description": "Web UI for the authorization manager of Yii PHP framework.",
     "keywords": ["yii", "authentication", "rbac"],
     "type": "library",
