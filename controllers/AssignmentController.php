@@ -62,13 +62,13 @@ class AssignmentController extends AuthController
 
         // assigned items
         $roles = Yii::$app->authManager->getRolesByUser($id);
-        usort($roles, function ($a, $b) {
+        /*usort($roles, function ($a, $b) {
             return $a->description - $b->description;
-        });
+        });*/
         $permissions = Yii::$app->authManager->getPermissionsByUser($id);
-        usort($permissions, function ($a, $b) {
+        /*usort($permissions, function ($a, $b) {
             return $a->description - $b->description;
-        });
+        });*/
         $assignments = ArrayHelper::merge($roles, $permissions);
 
         $assignmentOptions = $this->getAssignmentOptions($id);
